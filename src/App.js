@@ -31,25 +31,25 @@ function App() {
           <div className="col-lg-4">
             <Projects
               img={projectImg01}
-              company="JL Auto"
-              webUrl="charlotteautowiz.com"
+              company="JL Auto Inc."
+              webUrl="http://charlotteautowiz.com/"
               description="Local Auto Mechanic Shop asked us to build a booking system for their business."
             />
           </div>
           <div className="col-lg-4">
             <Projects
               img={projectImg02}
-              company="JL Auto"
-              webUrl="charlotteautowiz.com"
-              description="Local Auto Mechanic Shop asked us to build a booking system for their business."
+              company="Carolina Recycles Inc."
+              webUrl="https://carolinarecycles.com"
+              description="Hawk Sanitation Rebranding, Company name change, logo and static website."
             />
           </div>
           <div className="col-lg-4">
             <Projects
               img={projectImg03}
-              company="JL Auto"
-              webUrl="charlotteautowiz.com"
-              description="Local Auto Mechanic Shop asked us to build a booking system for their business."
+              company="Charlotte Budget Dumpster Inc."
+              webUrl="https://charlottebudgetdumpster.com"
+              description="Our clients at Charlotte Budget Dumpster wanted an online ordering system."
             />
           </div>
         </div>

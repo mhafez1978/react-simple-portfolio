@@ -39,3 +39,18 @@
   transform: translate(-50%, -50%) rotateY(0deg);
   opacity: 1;
 }
+
+/* .frame .details h3 {
+} */
+
+.frame .details h3,
+.frame .details p {
+  color: #fff;
+}
+
+.frame .details p {
+  font-size: 80%;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4%;
+}

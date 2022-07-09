@@ -18,25 +18,25 @@ const Projects = (props) => {
               width={"100%"}
               height={"100px"}
             />
-            <div class="details">
+            <div className="details">
               <div className="row">
-                <div className="col" style={{ textAlign: "left" }}>
-                  <ul>
-                    <li>{company}</li>
-                    <li>{webUrl}</li>
-                    <li>{description}</li>
-                  </ul>
+                <div
+                  className="col"
+                  style={{
+                    textAlign: "center",
+                    paddingTop: "10%",
+                    color: "#fff",
+                  }}
+                >
+                  <h3>{company}</h3>
+                  <a href={webUrl} target="_blank">
+                    {webUrl}
+                  </a>
+                  <p>{description}</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <hr />
-
-          <div
-            style={{ width: "100%", height: "200px", disply: "block" }}
-            className="row"
-          ></div>
         </div>
       </div>
     </section>
