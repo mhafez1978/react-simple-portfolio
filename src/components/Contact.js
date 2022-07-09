@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/custom.css';
+import emailjs from 'emailjs-com';
+import '../styles/custom.css';
 
 const location =
   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.647445330423!2d-71.3096620843126!3d42.64763347916865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a439003222e9%3A0x7b606332a3f66544!2s141%20John%20St%2C%20Lowell%2C%20MA%2001852!5e0!3m2!1sen!2sus!4v1657333668318!5m2!1sen!2sus';
@@ -12,6 +14,7 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [status, setStatus] = useState(false);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -25,6 +28,48 @@ const Contact = () => {
 
   console.log({ name, email, message });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const templateParams = { name, email, message };
+    emailjs
+      .send(
+        'service_wlsr15g',
+        'template_jvqiu3z',
+        templateParams,
+        'OttUrdHzbARGwXV4y'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setStatus(true);
+          document.getElementById('emailStatusMessage').style.display = 'block';
+        },
+        (error) => {
+          console.log(error.text);
+          setStatus(false);
+          document.getElementById('emailStatusMessage').style.display = 'block';
+        }
+      );
+  };
+
+  const msg =
+    status === true ? (
+      <div className="alert alert-success" role="alert">
+        <span>Message Sent OK</span>
+      </div>
+    ) : (
+      <div className="alert alert-danger" role="alert">
+        <span>So sorry, but your message was not sent</span>
+      </div>
+    );
+
+  const handleReset = (e) => {
+    e.preventDefault();
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <section id="contact" className="contact py-5" data-aos="slide-up">
       <div className="container">
@@ -34,8 +79,24 @@ const Contact = () => {
               <h2 id="contacttitle" className="mb-4">
                 Interested in working together? Let's talk
               </h2>
-
-              <form>
+              <div className="row col-12">
+                <div className="col-4">
+                  <a href={instagram} target="_blank" rel="noreferrer">
+                    Instagram
+                  </a>
+                </div>
+                <div className="col-4">
+                  <a href={youtube} target="_blank" rel="noreferrer">
+                    Youtube
+                  </a>
+                </div>
+                <div className="col-4">
+                  <a href={facebook} target="_blank" rel="noreferrer">
+                    facebook
+                  </a>
+                </div>
+              </div>
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-lg-6 col-12">
                     <input
@@ -76,16 +137,30 @@ const Contact = () => {
                     ></textarea>
                   </div>
 
-                  <div className="ml-lg-auto col-lg-5">
-                    <input
-                      id="send"
-                      type="submit"
-                      className="form-control submit-btn"
-                      value="Send"
-                    />
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-lg-6">
+                        <input
+                          id="send-btn"
+                          type="submit"
+                          className="form-control submit-btn"
+                          value="Send"
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        <input
+                          id="reset-btn"
+                          onClick={handleReset}
+                          className="form-control reset-btn"
+                          type="reset"
+                          value="Reset"
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </form>
+              <div id="emailStatusMessage">{msg}</div>
             </div>
           </div>
           <div className="col-lg-3 col-sm-6 col-md-3">

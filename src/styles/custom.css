@@ -117,3 +117,23 @@ h3 span {
   height: 100vh;
   margin-top: -80px;
 }
+#emailStatusMessage {
+  display: none;
+}
+
+#send-btn {
+  background-color: purple !important;
+  color: #fff;
+}
+#send-btn:hover {
+  background-color: #d4edda !important;
+  color: purple;
+}
+#reset-btn {
+  background-color: grey !important;
+  color: #fff;
+}
+#reset-btn:hover {
+  background-color: #fff !important;
+  color: grey;
+}
