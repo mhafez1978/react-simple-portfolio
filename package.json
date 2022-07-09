@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-react-components-playground",
-  "version": "0.1.0",
+  "name": "react-simple-portfolio",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
