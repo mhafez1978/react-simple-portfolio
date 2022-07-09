@@ -1,3 +1,5 @@
+import "../styles/custom.css";
+
 const Features = () => {
   return (
     <section
@@ -19,8 +21,12 @@ const Features = () => {
                 <div className="timeline-info">
                   <h3>
                     <span>Systems Support Engineer.</span>
-                    <small>Karuna Therapeutics Inc.</small>
-                    <small>Boston, Massachussetts.</small>
+                    <small style={{ color: "purple" }}>
+                      Karuna Therapeutics Inc.
+                    </small>
+                    <small style={{ color: "purple" }}>
+                      Boston, Massachussetts.
+                    </small>
                   </h3>
                   <p>
                     Complete hybrid network infratsructure and end user support.
@@ -35,8 +41,12 @@ const Features = () => {
                 <div className="timeline-info">
                   <h3>
                     <span>Tier 2 Field Support Engineer.</span>
-                    <small>New England Network Solutions.</small>
-                    <small>Lowell, Massachussetts.</small>
+                    <small style={{ color: "purple" }}>
+                      New England Network Solutions.
+                    </small>
+                    <small style={{ color: "purple" }}>
+                      Lowell, Massachussetts.
+                    </small>
                   </h3>
                   <p>
                     As a managed service provider filed engineer, we visit
@@ -53,8 +63,10 @@ const Features = () => {
                 <div className="timeline-info">
                   <h3>
                     <span>Traveling Infratsructure Engineer.</span>
-                    <small>Digital Insurance Inc.</small>
-                    <small>Atlanta, Giorgia.</small>
+                    <small style={{ color: "purple" }}>
+                      Digital Insurance Inc.
+                    </small>
+                    <small style={{ color: "purple" }}>Atlanta, Giorgia.</small>
                   </h3>
                   <p>
                     Traveling nation wide on a mission to migrate existing
@@ -73,8 +85,10 @@ const Features = () => {
                   <h3>
                     <span>Tier 3 Escalation Engineer.</span>
                     <br />
-                    <small>Microsoft.</small>
-                    <small>Charlotte, North Carolina.</small>
+                    <small style={{ color: "purple" }}>Microsoft.</small>
+                    <small style={{ color: "purple" }}>
+                      Charlotte, North Carolina.
+                    </small>
                   </h3>
                   <p>
                     As a Microsoft TekSystems Exchange Escalation Contractor I
@@ -100,8 +114,12 @@ const Features = () => {
                 <div className="timeline-info">
                   <h3>
                     <span>Full Stack Web Development</span>
-                    <small>Framingham University</small>
-                    <small>Framingham, Massachussetss.</small>
+                    <small style={{ color: "purple" }}>
+                      Framingham University
+                    </small>
+                    <small style={{ color: "purple" }}>
+                      Framingham, Massachussetss.
+                    </small>
                   </h3>
                   <p>
                     Learned how to use Node, Express, React, Sequelize-ORM,
@@ -119,8 +137,10 @@ const Features = () => {
                 <div className="timeline-info">
                   <h3>
                     <span>Cisco Meraki Network Associate</span>
-                    <small>Cisco</small>
-                    <small>Online Certificate</small>
+                    <small style={{ color: "purple" }}>Cisco</small>
+                    <small style={{ color: "purple" }}>
+                      Online Certificate
+                    </small>
                   </h3>
                   <p>
                     Setup, Install, Configure, and Support Cisco Meraki network
@@ -136,8 +156,13 @@ const Features = () => {
                 <div className="timeline-info">
                   <h3>
                     <span>Amazon Certified Cloud Practitioner.</span>
-                    <small>AWS Amazon Cloud Services.</small>
-                    <small>Online Certificate.</small>
+                    <br />
+                    <small style={{ color: "purple" }}>
+                      AWS Amazon Cloud Services.
+                    </small>
+                    <small style={{ color: "purple" }}>
+                      Online Certificate.
+                    </small>
                   </h3>
                   <p>
                     Deploy a complete scalable solutions on Amazon Cloud
@@ -154,8 +179,10 @@ const Features = () => {
                 <div className="timeline-info">
                   <h3>
                     <span>Microsoft Certified Systems Engineer.</span>
-                    <small>Microsoft.</small>
-                    <small>Online Certificate.</small>
+                    <small style={{ color: "purple" }}>Microsoft.</small>
+                    <small style={{ color: "purple" }}>
+                      Online Certificate.
+                    </small>
                   </h3>
                   <p>
                     Design, Build, Deploy and Support Windows Enterprise

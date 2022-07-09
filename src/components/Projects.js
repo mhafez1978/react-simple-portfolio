@@ -1,4 +1,4 @@
-import '../styles/custom.css';
+import "../styles/custom.css";
 
 const Projects = (props) => {
   const company = props.company;
@@ -7,32 +7,32 @@ const Projects = (props) => {
   const projectImg = props.img;
 
   return (
-    <section className="project py-5" id="project">
+    <section className="project py-4" id="project">
       <div className="item">
         <div className="project-info mr-4">
-          <div style={{ border: '1px solid black' }} className="frame">
+          <div style={{ border: "1px solid black" }} className="frame">
             <img
               src={projectImg}
               className="img-fluid"
               alt="project-pic"
-              width={'100%'}
-              height={'100px'}
+              width={"100%"}
+              height={"100px"}
             />
             <div className="details">
               <div className="row">
                 <div
                   className="col"
                   style={{
-                    textAlign: 'center',
-                    paddingTop: '10%',
-                    color: '#fff',
+                    textAlign: "center",
+                    paddingTop: "10%",
+                    color: "#fff",
                   }}
                 >
-                  <h3>{company}</h3>
-                  <a rel="nofollow" href={webUrl}>
+                  <h3 style={{ color: "aliceblue" }}>{company}</h3>
+                  <a style={{ color: "#EB19EE" }} rel="nofollow" href={webUrl}>
                     {webUrl}
                   </a>
-                  <p>{description}</p>
+                  <p style={{ color: "aliceblue" }}>{description}</p>
                 </div>
               </div>
             </div>

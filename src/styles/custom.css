@@ -82,7 +82,7 @@ a.navbar-brand {
   height: 100%;
   /* padding: 5% 8%; */
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateY(90deg);
@@ -94,11 +94,8 @@ a.navbar-brand {
 }
 .frame:hover .details {
   transform: translate(-50%, -50%) rotateY(0deg);
-  opacity: 1;
+  opacity: 0.9;
 }
-
-/* .frame .details h3 {
-} */
 
 .frame .details h3,
 .frame .details p {

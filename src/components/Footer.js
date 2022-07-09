@@ -8,8 +8,12 @@ const Footer = () => {
               Copyright &copy; 2022 Defacto Code . All rights reserved
             </p>
             <p className="copyright-text text-center">
-              Designed by{' '}
-              <a rel="nofollow" href="https://www.facebook.com/tooplate">
+              Built by{" "}
+              <a
+                style={{ color: "purple" }}
+                referrerpolicy="no-referrer-when-downgrade"
+                href="https://linkedin.com/in/mohamedhafez1978"
+              >
                 Mohamed Hafez
               </a>
             </p>
