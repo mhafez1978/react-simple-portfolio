@@ -5,26 +5,43 @@ const Features = () => {
       id="resume"
     >
       <div className="container">
-        <div className="row">
+        <div className="row" data-aos="slide-up">
           <div className="col-lg-6 col-12">
             <h2 className="mb-4" id="experiences">
-              Experiences
+              Career Progress
             </h2>
 
             <div className="timeline">
               <div className="timeline-wrapper">
                 <div className="timeline-yr">
-                  <span>2019</span>
+                  <span>2022</span>
                 </div>
                 <div className="timeline-info">
                   <h3>
-                    <span>Project Manager</span>
-                    <small>Best Studio</small>
+                    <span>Systems Support Engineer.</span>
+                    <small>Karuna Therapeutics Inc.</small>
+                    <small>Boston, Massachussetts.</small>
                   </h3>
                   <p>
-                    Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam
-                    laoreet libero ac pharetra feugiat. Cras ac fermentum nunc,
-                    a faucibus nunc.
+                    Complete hybrid network infratsructure and end user support.
+                  </p>
+                </div>
+              </div>
+
+              <div className="timeline-wrapper">
+                <div className="timeline-yr">
+                  <span>2020</span>
+                </div>
+                <div className="timeline-info">
+                  <h3>
+                    <span>Tier 2 Field Support Engineer.</span>
+                    <small>New England Network Solutions.</small>
+                    <small>Lowell, Massachussetts.</small>
+                  </h3>
+                  <p>
+                    As a managed service provider filed engineer, we visit
+                    businesses in distress and resolve any IT challanges a
+                    customer has.
                   </p>
                 </div>
               </div>
@@ -35,12 +52,15 @@ const Features = () => {
                 </div>
                 <div className="timeline-info">
                   <h3>
-                    <span>UX Designer</span>
-                    <small>Digital Ace</small>
+                    <span>Traveling Infratsructure Engineer.</span>
+                    <small>Digital Insurance Inc.</small>
+                    <small>Atlanta, Giorgia.</small>
                   </h3>
                   <p>
-                    Fusce rutrum augue id orci rhoncus molestie. Nunc auctor
-                    dignissim lacus vel iaculis.
+                    Traveling nation wide on a mission to migrate existing
+                    acquired exiting insurance business networks infratsructure,
+                    data, processes, customers and people to One Digital head
+                    quarters data center in Atlanta Giorgia..
                   </p>
                 </div>
               </div>
@@ -51,29 +71,16 @@ const Features = () => {
                 </div>
                 <div className="timeline-info">
                   <h3>
-                    <span>UI Freelancer</span>
+                    <span>Tier 3 Escalation Engineer.</span>
+                    <br />
+                    <small>Microsoft.</small>
+                    <small>Charlotte, North Carolina.</small>
                   </h3>
                   <p>
-                    Sed fringilla vitae enim sit amet cursus. Sed cursus dictum
-                    tortor quis pharetra. Pellentesque habitant morbi tristique
-                    senectus et netus et malesuada fames ac turpis egestas.
-                  </p>
-                </div>
-              </div>
-
-              <div className="timeline-wrapper">
-                <div className="timeline-yr">
-                  <span>2014</span>
-                </div>
-                <div className="timeline-info">
-                  <h3>
-                    <span>
-                      Junior Designer<small>Crafted Co.</small>
-                    </span>
-                  </h3>
-                  <p>
-                    Cras scelerisque scelerisque condimentum. Nullam at volutpat
-                    mi. Nunc auctor ipsum eget magna consequat viverra.
+                    As a Microsoft TekSystems Exchange Escalation Contractor I
+                    engage with premiere customers to resolve any email related
+                    issues including mailflow, mailbox security breaches,
+                    retention, archiving, and e-discovery.
                   </p>
                 </div>
               </div>
@@ -82,22 +89,25 @@ const Features = () => {
 
           <div className="col-lg-6 col-12">
             <h2 className="mb-4 mobile-mt-2" id="education">
-              Education
+              Industry Certifications
             </h2>
 
             <div className="timeline">
               <div className="timeline-wrapper">
                 <div className="timeline-yr">
-                  <span>2017</span>
+                  <span>2022</span>
                 </div>
                 <div className="timeline-info">
                   <h3>
-                    <span>Mobile Web</span>
-                    <small>Master Design</small>
+                    <span>Full Stack Web Development</span>
+                    <small>Framingham University</small>
+                    <small>Framingham, Massachussetss.</small>
                   </h3>
                   <p>
-                    Please tell your friends about Tooplate website. That would
-                    be very helpful. We need your support.
+                    Learned how to use Node, Express, React, Sequelize-ORM,
+                    MongoDB, MySQL to create functional full stack app with a
+                    backend server serving API's and a front end consuming the
+                    data and presenting it to viewer.
                   </p>
                 </div>
               </div>
@@ -108,32 +118,48 @@ const Features = () => {
                 </div>
                 <div className="timeline-info">
                   <h3>
-                    <span>User Interfaces</span>
-                    <small>Creative Agency</small>
+                    <span>Cisco Meraki Network Associate</span>
+                    <small>Cisco</small>
+                    <small>Online Certificate</small>
                   </h3>
                   <p>
-                    <a rel="nofollow" href="https://www.facebook.com/tooplate">
-                      Tooplate
-                    </a>{" "}
-                    is a great website to download HTML templates without any
-                    login or email.
+                    Setup, Install, Configure, and Support Cisco Meraki network
+                    using Cisco Meraki gear ie.
                   </p>
                 </div>
               </div>
 
               <div className="timeline-wrapper">
                 <div className="timeline-yr">
-                  <span>2013</span>
+                  <span>2019</span>
                 </div>
                 <div className="timeline-info">
                   <h3>
-                    <span>Artwork Design</span>
-                    <small>New Art School</small>
+                    <span>Amazon Certified Cloud Practitioner.</span>
+                    <small>AWS Amazon Cloud Services.</small>
+                    <small>Online Certificate.</small>
                   </h3>
                   <p>
-                    You can freely use Tooplate's templates for your business or
-                    personal sites. You cannot redistribute this template
-                    without a permission.
+                    Deploy a complete scalable solutions on Amazon Cloud
+                    infratsructure. Utilize advanced features like auto-scaling,
+                    load balancing, DNS management, database management, and
+                    Identity management.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-wrapper">
+                <div className="timeline-yr">
+                  <span>2000</span>
+                </div>
+                <div className="timeline-info">
+                  <h3>
+                    <span>Microsoft Certified Systems Engineer.</span>
+                    <small>Microsoft.</small>
+                    <small>Online Certificate.</small>
+                  </h3>
+                  <p>
+                    Design, Build, Deploy and Support Windows Enterprise
+                    Infrastructure Network Systems.
                   </p>
                 </div>
               </div>

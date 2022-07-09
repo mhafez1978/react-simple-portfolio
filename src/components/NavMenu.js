@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import '../styles/custom.css';
 
+const resume =
+  'https://docs.google.com/document/d/1-dD4L1qhkkYaoa3wrLESgSFDmOPItZ4K/edit?usp=sharing&ouid=106440158359286859061&rtpof=true&sd=true';
 const NavMenu = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState('light');
 
   const dark = () => {
-    document.body.style.background = "#222";
+    document.body.style.background = '#222';
     // document.getElementById("logo").style.color = "#fff";
     // document.getElementById("about").style.color = "#fff";
     // document.getElementById("projects").style.color = "#fff";
@@ -18,7 +21,7 @@ const NavMenu = () => {
     // document.getElementById("mode").style.color = "#fff";
   };
   const light = () => {
-    document.body.style.background = "#fff";
+    document.body.style.background = '#fff';
     // document.getElementById("logo").style.color = "#222";
     // document.getElementById("about").style.color = "#222";
     // document.getElementById("projects").style.color = "#222";
@@ -33,12 +36,15 @@ const NavMenu = () => {
   };
 
   const changeTheme = () => {
-    (theme === "light" ? setTheme(dark) : setTheme(light)) ||
-      (theme === "dark" ? setTheme(light) : setTheme(dark));
+    (theme === 'light' ? setTheme(dark) : setTheme(light)) ||
+      (theme === 'dark' ? setTheme(light) : setTheme(dark));
   };
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-light">
+    <nav
+      className="navbar navbar-expand-sm navbar-light"
+      style={{ backgroundColor: 'aliceblue', height: '45px' }}
+    >
       <div className="container">
         <a id="logo" className="navbar-brand" href="index.html">
           <i className="uil uil-user"></i> Mohamed Hafez
@@ -61,13 +67,6 @@ const NavMenu = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a href="#about" className="nav-link">
-                <span id="about" data-hover="About">
-                  About
-                </span>
-              </a>
-            </li>
-            <li className="nav-item">
               <a href="#project" className="nav-link">
                 <span id="projects" data-hover="Projects">
                   Projects
@@ -75,7 +74,12 @@ const NavMenu = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#resume" className="nav-link">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={resume}
+                className="nav-link"
+              >
                 <span id="resume" data-hover="Resume">
                   Resume
                 </span>
