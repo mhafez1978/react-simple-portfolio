@@ -26,6 +26,7 @@ const About = () => {
                   style={{ marginTop: '-10px', marginBottom: '40px' }}
                 >
                   <span
+                    id="animatedspan1"
                     className="animated-item"
                     style={{
                       fontSize: '30px',
@@ -36,6 +37,7 @@ const About = () => {
                     I am a Full Stack Web Developer
                   </span>
                   <span
+                    id="animatedspan2"
                     className="animated-item"
                     style={{
                       fontSize: '30px',
@@ -46,6 +48,7 @@ const About = () => {
                     I am an Amazon Certified Cloud Practitioner
                   </span>
                   <span
+                    id="animatedspan3"
                     className="animated-item"
                     style={{
                       fontSize: '30px',
@@ -58,7 +61,10 @@ const About = () => {
                 </div>
               </div>
 
-              <p style={{ width: '90%', fontSize: '16px', marginTop: '20px' }}>
+              <p
+                id="aboutme"
+                style={{ width: '90%', fontSize: '16px', marginTop: '20px' }}
+              >
                 Hello, it's nice to see you. My name is Mohamed Hafez, and I am
                 a Full Stack Web Developer based in Lowell, Massachussetts,
                 United States. If you like what you see please connect with me
@@ -83,7 +89,10 @@ const About = () => {
             </div>
           </div>
 
-          <div className="col-lg-5 col-md-12 col-12">
+          <div
+            className="col-lg-5 col-md-12 col-12"
+            style={{ paddingTop: '15%' }}
+          >
             <div className="about-image svg">
               <img src={aboutImg} className="img-fluid" alt="about-pic" />
             </div>

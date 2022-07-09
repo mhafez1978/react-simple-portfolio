@@ -82,7 +82,7 @@ a.navbar-brand {
   height: 100%;
   /* padding: 5% 8%; */
   position: absolute;
-  content: "";
+  content: '';
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateY(90deg);
@@ -107,4 +107,13 @@ a.navbar-brand {
   width: 80%;
   margin: 0 auto;
   padding-top: 4%;
+}
+
+h3 span {
+  font-size: 1.4rem;
+}
+
+#about {
+  height: 100vh;
+  margin-top: -80px;
 }

@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import "../styles/custom.css";
+import React, { useState } from 'react';
+import '../styles/custom.css';
 
 const location =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.647445330423!2d-71.3096620843126!3d42.64763347916865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a439003222e9%3A0x7b606332a3f66544!2s141%20John%20St%2C%20Lowell%2C%20MA%2001852!5e0!3m2!1sen!2sus!4v1657333668318!5m2!1sen!2sus";
-const instagram = "https://www.instagram.com/mofez1978";
-const youtube = "http://youtube.com/movewebdesign";
-const facebook = "https://www.facebook.com/profile.php?id=100025229736186";
-const gify = "https://giphy.com/embed/l0HekX1fg8NEa2eVG";
+  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.647445330423!2d-71.3096620843126!3d42.64763347916865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a439003222e9%3A0x7b606332a3f66544!2s141%20John%20St%2C%20Lowell%2C%20MA%2001852!5e0!3m2!1sen!2sus!4v1657333668318!5m2!1sen!2sus';
+const instagram = 'https://www.instagram.com/mofez1978';
+const youtube = 'http://youtube.com/movewebdesign';
+const facebook = 'https://www.facebook.com/profile.php?id=100025229736186';
+const gify = 'https://giphy.com/embed/l0HekX1fg8NEa2eVG';
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -31,7 +31,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-4 col-sm-6 col-md-4">
             <div className="contact-form">
-              <h2 className="mb-4">
+              <h2 id="contacttitle" className="mb-4">
                 Interested in working together? Let's talk
               </h2>
 
@@ -78,9 +78,10 @@ const Contact = () => {
 
                   <div className="ml-lg-auto col-lg-5">
                     <input
+                      id="send"
                       type="submit"
                       className="form-control submit-btn"
-                      value="Send Button"
+                      value="Send"
                     />
                   </div>
                 </div>
@@ -90,41 +91,48 @@ const Contact = () => {
           <div className="col-lg-3 col-sm-6 col-md-3">
             <div
               style={{
-                width: "100%",
-                height: "495px",
-                border: "0",
-                className: "custom text-center",
+                width: '100%',
+                height: '495px',
+                border: '0',
+                className: 'custom text-center',
               }}
             >
               <iframe
-                id="giphy"
+                title="giphy"
                 src={gify}
                 referrerpolicy="no-referrer-when-downgrade"
                 loading="lazy"
                 width="270px"
                 height="455px"
                 className="mr-3"
-                style={{ border: "0" }}
+                style={{ border: '0' }}
               ></iframe>
               Attrib:
-              <a href="https://gify.com" style={{ color: "purple" }}>
+              <a id="giphy" href="https://gify.com" style={{ color: 'purple' }}>
                 Giphy
               </a>
             </div>
           </div>
-          <div className="col-lg-5 col-sm-12 col-md-12  mt-5">
-            <h3>Where To Find Me</h3>
-            <i style={{ color: "purple" }}>Mailing Address</i>
-            <address>141 JOHN ST. LOWELL, MA 01852</address>
-            <i style={{ color: "purple" }}>Phone</i>
-            <address>+1 978 888 7688</address>
+          <div
+            className="col-lg-5 col-sm-12 col-md-12"
+            style={{ paddingLeft: '40px' }}
+          >
+            <h3 id="where">Where To Find Me</h3>
+            <i id="addtitle" style={{ color: 'purple' }}>
+              Mailing Address
+            </i>
+            <address id="add1">141 JOHN ST. LOWELL, MA 01852</address>
+            <i id="addphone" style={{ color: 'purple' }}>
+              Phone
+            </i>
+            <address id="add2">+1 978 888 7688</address>
             <div className="google-map w-100">
               <iframe
                 title="location"
                 src={location}
                 width="400px"
-                height="280px"
-                style={{ border: "0" }}
+                height="260px"
+                style={{ border: '0' }}
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
