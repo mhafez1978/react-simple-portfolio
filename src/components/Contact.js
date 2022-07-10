@@ -148,15 +148,15 @@ const Contact = () => {
 
                   <div className="container">
                     <div className="row">
-                      <div className="conatiner">
-                        <div
-                          className="g-recaptcha"
-                          data-sitekey="6LfBy9ogAAAAAEiOBui0A45wibxClcXXeQTj-M9d"
-                        >
-                          {reCaptcha}
-                        </div>
-                        <br />
+                      <br />
+
+                      <div
+                        className="g-recaptcha"
+                        data-sitekey="6LfBy9ogAAAAAEiOBui0A45wibxClcXXeQTj-M9d"
+                      >
+                        {reCaptcha}
                       </div>
+                      <br />
                     </div>
                     <div className="row">
                       <div className="col-lg-6">
@@ -210,7 +210,7 @@ const Contact = () => {
           </div>
           <div
             className="col-lg-5 col-sm-12 col-md-12"
-            style={{ paddingLeft: '40px' }}
+            style={{ paddingLeft: '40px', paddingTop: '4%' }}
           >
             <h3 id="where">Where To Find Me</h3>
             <i id="addtitle" style={{ color: 'purple' }}>
