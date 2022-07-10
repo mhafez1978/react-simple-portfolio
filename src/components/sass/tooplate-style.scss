@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700');
 
 // VARIABLES
-$font-base: "Maven Pro", sans-serif;
+$font-base: 'Maven Pro', sans-serif;
 $body-font-size: 18px;
 $h1-font-size: 2.8em;
 $h2-font-size: 2.4em;
@@ -56,6 +56,7 @@ ul {
 }
 
 a {
+  
   font-size: $link-font-size;
   font-weight: $font-weight-normal;
   text-decoration: none !important;
@@ -157,10 +158,10 @@ strong {
   opacity: 0;
   animation: BottomTotop 6s linear infinite 0s;
   &:nth-child(2n + 2) {
-    animation-delay: 6s;
+    animation-delay: 160s;
   }
   &:nth-child(3n + 3) {
-    animation-delay: 18s;
+    animation-delay: 260s;
   }
 }
 
@@ -201,14 +202,14 @@ strong {
   z-index: 999999;
   will-change: transform;
   transition: transform 200ms linear;
-  &[class*="-unpinned"] {
+  &[class*='-unpinned'] {
     transform: translate(0, -150%);
   }
 
-  &[class*="-pinned"] {
+  &[class*='-pinned'] {
     transform: translate(0, 0);
   }
-  &[class*="headroom--not-top"] {
+  &[class*='headroom--not-top'] {
     background: $text-white;
     // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.09);
     border-bottom: 1px solid #f0f0f0;
@@ -278,7 +279,7 @@ strong {
   &:focus {
     outline: none;
   }
-  &[aria-expanded="true"] {
+  &[aria-expanded='true'] {
     .navbar-toggler-icon {
       &:first-child {
         transform: rotate(45deg);
@@ -321,16 +322,16 @@ strong {
   position: relative;
   right: 6px;
   &:after {
-    font-family: "unicons";
-    content: "\ea9f";
+    font-family: 'unicons';
+    content: '\ea9f';
     font-size: 30px;
     font-weight: 300;
     font-style: normal;
   }
   &.active {
     &:after {
-      font-family: "unicons";
-      content: "\eb65";
+      font-family: 'unicons';
+      content: '\eb65';
       font-size: 30px;
       color: $text-white;
     }
@@ -346,7 +347,7 @@ strong {
     }
   }
   .navbar {
-    &[class*="headroom--not-top"] {
+    &[class*='headroom--not-top'] {
       background: $dark-mode-color;
       border-bottom: 1px solid #1f1f1f;
     }
@@ -385,7 +386,7 @@ strong {
     }
   }
   &:before {
-    content: "";
+    content: '';
     background: $button-color;
     width: 3px;
     height: 100%;
@@ -441,20 +442,20 @@ strong {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        font-family: "unicons";
+        font-family: 'unicons';
         font-size: 100px;
         line-height: normal;
       }
     }
     .owl-prev {
       &:before {
-        content: "\e833";
+        content: '\e833';
         left: -45px;
       }
     }
     .owl-next {
       &:before {
-        content: "\e836";
+        content: '\e836';
         right: -45px;
       }
     }
@@ -462,7 +463,7 @@ strong {
 }
 
 .owl-theme {
-  .owl-nav [class*="owl-"] {
+  .owl-nav [class*='owl-'] {
     background: none;
     border-radius: 0;
     margin: 0;

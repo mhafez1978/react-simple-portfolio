@@ -10,8 +10,8 @@ import projectImg02 from './components/images/project/cr.png';
 import projectImg03 from './components/images/project/cbd.png';
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
+import './styles/custom.css';
 
 function App() {
   AOS.init();
@@ -19,9 +19,13 @@ function App() {
     <>
       <NavMenu />
       <About />
-      <div className="mx-auto col-lg-12 text-center">
+      <div
+        id="projects"
+        className="mx-auto col-lg-12 text-center"
+        style={{ paddingTop: '50px' }}
+      >
         <div className="col-lg-8 mx-auto mb-4">
-          <h2 id="project-heading">
+          <h2 id="project-heading" style={{ paddingTop: '25px' }}>
             Please check out some of my completed projects
           </h2>
         </div>

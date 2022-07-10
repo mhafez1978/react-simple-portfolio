@@ -1,9 +1,10 @@
-import React from "react";
-import aboutImg from "./images/startup.svg";
-import "../styles/custom.css";
+import React from 'react';
+import Typed from 'react-typed';
+import aboutImg from '../components/images/final.png';
+import '../styles/custom.css';
 
 const resume =
-  "https://docs.google.com/document/d/1-dD4L1qhkkYaoa3wrLESgSFDmOPItZ4K/edit?usp=sharing&ouid=106440158359286859061&rtpof=true&sd=true";
+  'https://docs.google.com/document/d/1-dD4L1qhkkYaoa3wrLESgSFDmOPItZ4K/edit?usp=sharing&ouid=106440158359286859061&rtpof=true&sd=true';
 
 const About = () => {
   return (
@@ -13,63 +14,46 @@ const About = () => {
     >
       <div className="container">
         <div className="row" data-aos="slide-up">
-          <div className="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+          <div className="col-lg-7 col-md-12 col-sm-12 d-flex align-items-center">
             <div className="about-text">
               <div className="animated animated-text">
                 <div className="mr-2">
                   <h1 id="opening">
-                    Building Websites with a Heart, Soul, and a Mind.
+                    {/* Robust Data Driven Business Web &amp; Mobile Applications. */}
+                    Building Robust, Responsive, and Engaging Web Apps.
                   </h1>
-                </div>
-                <div
-                  className="animated-info"
-                  style={{ marginTop: "-10px", marginBottom: "40px" }}
-                >
-                  <span
-                    id="animatedspan1"
-                    className="animated-item"
-                    style={{
-                      fontSize: "30px",
-                      minWidth: "350%",
-                      color: "purple",
-                    }}
+                  <h3 id="opening2" style={{ marginBottom: '25px' }}>
+                    A little bit more info about myself, ...
+                  </h3>
+                  <Typed
+                    strings={[
+                      'I am A Full Stack Web Developer',
+                      'I am An Amazon Certified Cloud Practitioner',
+                      'I am A Microsoft Certified Systems Engineer',
+                    ]}
+                    typeSpeed={40}
+                    backSpeed={150}
+                    attr="placeholder"
+                    loop
                   >
-                    I am a Full Stack Web Developer
-                  </span>
-                  <span
-                    id="animatedspan2"
-                    className="animated-item"
-                    style={{
-                      fontSize: "30px",
-                      minWidth: "350%",
-                      color: "purple",
-                    }}
-                  >
-                    I am an Amazon Certified Cloud Practitioner
-                  </span>
-                  <span
-                    id="animatedspan3"
-                    className="animated-item"
-                    style={{
-                      fontSize: "30px",
-                      minWidth: "350%",
-                      color: "purple",
-                    }}
-                  >
-                    I am a Microsoft Certified Systems Engineer
-                  </span>
+                    <input type="text" className="typedspan" />
+                  </Typed>
                 </div>
               </div>
-
               <p
                 id="aboutme"
-                style={{ width: "90%", fontSize: "16px", marginTop: "20px" }}
+                style={{
+                  width: '90%',
+                  fontSize: '16px',
+                  marginTop: '25px',
+                  marginBottom: '50px',
+                }}
               >
-                Hello, it's nice to see you. My name is Mohamed Hafez, and I am
-                a Full Stack Web Developer based in Lowell, Massachussetts,
-                United States. If you like what you see please connect with me
-                on social scene, email me a positive note, or send me a message
-                using the contact form below.
+                Hello, it's so nice of you to drop by. My name is Mohamed Hafez.
+                I am an aspiring Full Stack Software Developer. If you're
+                looking to build a website or a mobile app focusing on a mixture
+                of engaging user content, functionality, scalability, and
+                performace you're at the right place.
               </p>
 
               <div className="custom-btn-group mt-4">
@@ -82,18 +66,18 @@ const About = () => {
                   <i className="uil uil-file-alt"></i> Download A Copy of My
                   Resume
                 </a>
-                <a href="#contact" className="grey-btn">
-                  Get a free quote
+                <a href="#projects" className="grey-btn">
+                  Review Completed Projects
                 </a>
               </div>
             </div>
           </div>
 
           <div
-            className="col-lg-5 col-md-5 col-sm-5 col-12"
-            style={{ paddingTop: "7%" }}
+            className="col-lg-5 col-md-12 col-sm-12"
+            style={{ paddingTop: '7%' }}
           >
-            <div className="about-image svg">
+            <div className="about-image svg" style={{ marginBottom: '25px' }}>
               <img src={aboutImg} className="img-fluid" alt="about-pic" />
             </div>
           </div>

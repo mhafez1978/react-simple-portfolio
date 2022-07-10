@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import {
+  AiOutlineFacebook,
+  AiOutlineYoutube,
+  AiOutlineInstagram,
+  AiOutlineGithub,
+  AiOutlineTwitter,
+  AiOutlineCheckCircle,
+  AiOutlineMinusCircle,
+} from 'react-icons/ai';
 import '../styles/custom.css';
 var Recaptcha = require('react-recaptcha');
 
@@ -56,11 +65,15 @@ const Contact = () => {
   const msg =
     status === true ? (
       <div className="alert alert-success" role="alert">
-        <span>Message Sent OK</span>
+        <span>
+          <AiOutlineCheckCircle /> Message Sent OK
+        </span>
       </div>
     ) : (
       <div className="alert alert-danger" role="alert">
-        <span>So sorry, but your message was not sent</span>
+        <span>
+          <AiOutlineMinusCircle /> So sorry, but your message was not sent
+        </span>
       </div>
     );
 
@@ -80,20 +93,49 @@ const Contact = () => {
               <h2 id="contacttitle" className="mb-4">
                 Interested in working together? Let's talk
               </h2>
-              <div className="row col-12">
-                <div className="col-4">
-                  <a href={instagram} target="_blank" rel="noreferrer">
-                    Instagram
+              <div className="row">
+                <div
+                  id="social"
+                  style={{
+                    paddingLeft: '20px',
+                    fontSize: '2rem',
+                    color: 'purple',
+                  }}
+                >
+                  <a
+                    className="mr-2"
+                    href={instagram}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineInstagram fill="purple" />
                   </a>
-                </div>
-                <div className="col-4">
-                  <a href={youtube} target="_blank" rel="noreferrer">
-                    Youtube
+                  <a
+                    className="mr-2"
+                    href={youtube}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineYoutube fill="purple" />
                   </a>
-                </div>
-                <div className="col-4">
+                  <a
+                    className="mr-2"
+                    href={facebook}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineFacebook fill="purple" />
+                  </a>
+                  <a
+                    className="mr-2"
+                    href={facebook}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <AiOutlineGithub fill="purple" />
+                  </a>
                   <a href={facebook} target="_blank" rel="noreferrer">
-                    facebook
+                    <AiOutlineTwitter fill="purple" />
                   </a>
                 </div>
               </div>
@@ -128,6 +170,7 @@ const Contact = () => {
                   <div className="col-12">
                     <textarea
                       name="message"
+                      type="text"
                       rows="6"
                       className="form-control"
                       id="message"
@@ -184,25 +227,27 @@ const Contact = () => {
                 referrerpolicy="no-referrer-when-downgrade"
                 loading="lazy"
                 width="270px"
-                height="455px"
-                className="mr-3"
+                height="500px"
+                className="mr-3 mt-5"
                 style={{ border: '0' }}
               ></iframe>
-              Attrib:
-              <a
-                id="giphy"
-                href="https://giphy.com"
-                style={{ color: 'purple' }}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Giphy
-              </a>
+              <center>
+                Image Attribute:
+                <a
+                  id="giphy"
+                  href="https://giphy.com"
+                  style={{ color: 'purple' }}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Giphy
+                </a>
+              </center>
             </div>
           </div>
           <div
             className="col-lg-5 col-sm-12 col-md-12"
-            style={{ paddingLeft: '40px', paddingTop: '4%' }}
+            style={{ paddingLeft: '40px', paddingTop: '8%' }}
           >
             <h3 id="where">Where To Find Me</h3>
             <i id="addtitle" style={{ color: 'purple' }}>

@@ -8,18 +8,9 @@ const NavMenu = () => {
 
   const dark = () => {
     document.body.style.background = '#222';
-    // document.getElementById("logo").style.color = "#fff";
-    // document.getElementById("about").style.color = "#fff";
-    // document.getElementById("projects").style.color = "#fff";
-    // document.getElementById('resume').style.color = '#fff';
-    // document.getElementById("contact").style.color = "#fff";
-    // document.getElementById("greeting").style.color = "#fff";
-
     document.getElementById('opening').style.color = '#fff';
+    document.getElementById('opening2').style.color = '#fff';
     document.getElementById('project-heading').style.color = '#fff';
-    document.getElementById('animatedspan1').style.color = '#fff';
-    document.getElementById('animatedspan2').style.color = '#fff';
-    document.getElementById('animatedspan3').style.color = '#fff';
     document.getElementById('aboutme').style.color = '#fff';
     document.getElementById('experiences').style.color = '#fff';
     document.getElementById('education').style.color = '#fff';
@@ -62,6 +53,7 @@ const NavMenu = () => {
     document.getElementById('addtitle').style.color = '#fff';
     document.getElementById('addphone').style.color = '#fff';
     document.getElementById('contacttitle').style.color = '#fff';
+    document.getElementById('social').style.color = '#fff';
     document.getElementById('giphy').style.color = '#fff';
     document.getElementById('mohamed').style.color = '#fff';
     document.getElementById('copy').style.color = '#fff';
@@ -103,10 +95,8 @@ const NavMenu = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a href="#project" className="nav-link">
-                <span id="projects" data-hover="Projects">
-                  Projects
-                </span>
+              <a href="#projects" className="nav-link">
+                <span data-hover="Projects">Projects</span>
               </a>
             </li>
             <li className="nav-item">
@@ -123,9 +113,7 @@ const NavMenu = () => {
             </li>
             <li className="nav-item">
               <a href="#contact" className="nav-link">
-                <span id="contact" data-hover="Contact">
-                  Contact
-                </span>
+                <span data-hover="Contact">Contact me</span>
               </a>
             </li>
           </ul>

@@ -19,6 +19,7 @@ a.navbar-brand {
   color: purple !important;
   text-shadow: 0 2px 1px 2px;
 }
+
 .purple-btn {
   width: 300px;
   padding: 10px 15px 10px 15px;
@@ -117,6 +118,31 @@ h3 span {
   height: 100vh;
   margin-top: -80px;
 }
+
+#opening {
+  color: purple;
+}
+.typedspan {
+  width: 450px;
+  border: none;
+  color: purple !important;
+  font-size: 1.2rem;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: purple;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: purple;
+}
+
+::placeholder {
+  color: purple;
+}
+
 #emailStatusMessage {
   display: none;
 }
