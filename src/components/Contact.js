@@ -104,7 +104,7 @@ const Contact = () => {
                   </a>
                 </div>
               </div>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} action="?" method="POST">
                 <div className="row">
                   <div className="col-lg-6 col-12">
                     <input
@@ -148,6 +148,7 @@ const Contact = () => {
                   <div className="container">
                     <div className="row">
                       <div
+                        data-callback={handleSubmit}
                         className="g-recaptcha"
                         data-sitekey="6LfBy9ogAAAAAEiOBui0A45wibxClcXXeQTj-M9d"
                       >
