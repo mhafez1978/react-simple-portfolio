@@ -14,6 +14,7 @@ const NavMenu = () => {
     // document.getElementById('resume').style.color = '#fff';
     // document.getElementById("contact").style.color = "#fff";
     // document.getElementById("greeting").style.color = "#fff";
+
     document.getElementById('opening').style.color = '#fff';
     document.getElementById('project-heading').style.color = '#fff';
     document.getElementById('animatedspan1').style.color = '#fff';
@@ -65,22 +66,9 @@ const NavMenu = () => {
     document.getElementById('mohamed').style.color = '#fff';
     document.getElementById('copy').style.color = '#fff';
     document.getElementById('copyright').style.color = '#fff';
-    document.getElementById('send').style.backgroundColor = 'purple';
-    document.getElementById('send').style.color = '#fff';
   };
   const light = () => {
     document.body.style.background = '#fff';
-    // document.getElementById("logo").style.color = "#222";
-    // document.getElementById("about").style.color = "#222";
-    // document.getElementById("projects").style.color = "#222";
-    // document.getElementById("resume").style.color = "#222";
-    // document.getElementById("contact").style.color = "#222";
-    // document.getElementById("greeting").style.color = "#222";
-    // document.getElementById("opening").style.color = "#222";
-    // document.getElementById("project-heading").style.color = "#222";
-    // document.getElementById("experiences").style.color = "#222";
-    // document.getElementById("education").style.color = "#222";
-    // document.getElementById("mode").style.color = "#222";
   };
 
   const changeTheme = () => {
