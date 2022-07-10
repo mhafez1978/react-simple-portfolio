@@ -73,9 +73,10 @@ const Contact = () => {
   };
 
   const reCaptcha = async () => {
-    await axios.post(
+    const gcaptcha = await axios.post(
       'https://www.google.com/recaptcha/api/siteverify METHOD: POST'
     );
+    return gcaptcha;
   };
 
   return (
@@ -147,14 +148,15 @@ const Contact = () => {
 
                   <div className="container">
                     <div className="row">
-                      <div
-                        data-callback={handleSubmit}
-                        className="g-recaptcha"
-                        data-sitekey="6LfBy9ogAAAAAEiOBui0A45wibxClcXXeQTj-M9d"
-                      >
-                        {reCaptcha}
+                      <div className="conatiner">
+                        <div
+                          className="g-recaptcha"
+                          data-sitekey="6LfBy9ogAAAAAEiOBui0A45wibxClcXXeQTj-M9d"
+                        >
+                          {reCaptcha}
+                        </div>
+                        <br />
                       </div>
-                      <br />
                     </div>
                     <div className="row">
                       <div className="col-lg-6">
