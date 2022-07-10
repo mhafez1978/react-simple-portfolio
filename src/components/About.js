@@ -1,9 +1,9 @@
-import React from 'react';
-import aboutImg from './images/startup.svg';
-import '../styles/custom.css';
+import React from "react";
+import aboutImg from "./images/startup.svg";
+import "../styles/custom.css";
 
 const resume =
-  'https://docs.google.com/document/d/1-dD4L1qhkkYaoa3wrLESgSFDmOPItZ4K/edit?usp=sharing&ouid=106440158359286859061&rtpof=true&sd=true';
+  "https://docs.google.com/document/d/1-dD4L1qhkkYaoa3wrLESgSFDmOPItZ4K/edit?usp=sharing&ouid=106440158359286859061&rtpof=true&sd=true";
 
 const About = () => {
   return (
@@ -23,15 +23,15 @@ const About = () => {
                 </div>
                 <div
                   className="animated-info"
-                  style={{ marginTop: '-10px', marginBottom: '40px' }}
+                  style={{ marginTop: "-10px", marginBottom: "40px" }}
                 >
                   <span
                     id="animatedspan1"
                     className="animated-item"
                     style={{
-                      fontSize: '30px',
-                      minWidth: '350%',
-                      color: 'purple',
+                      fontSize: "30px",
+                      minWidth: "350%",
+                      color: "purple",
                     }}
                   >
                     I am a Full Stack Web Developer
@@ -40,9 +40,9 @@ const About = () => {
                     id="animatedspan2"
                     className="animated-item"
                     style={{
-                      fontSize: '30px',
-                      minWidth: '350%',
-                      color: 'purple',
+                      fontSize: "30px",
+                      minWidth: "350%",
+                      color: "purple",
                     }}
                   >
                     I am an Amazon Certified Cloud Practitioner
@@ -51,9 +51,9 @@ const About = () => {
                     id="animatedspan3"
                     className="animated-item"
                     style={{
-                      fontSize: '30px',
-                      minWidth: '350%',
-                      color: 'purple',
+                      fontSize: "30px",
+                      minWidth: "350%",
+                      color: "purple",
                     }}
                   >
                     I am a Microsoft Certified Systems Engineer
@@ -63,7 +63,7 @@ const About = () => {
 
               <p
                 id="aboutme"
-                style={{ width: '90%', fontSize: '16px', marginTop: '20px' }}
+                style={{ width: "90%", fontSize: "16px", marginTop: "20px" }}
               >
                 Hello, it's nice to see you. My name is Mohamed Hafez, and I am
                 a Full Stack Web Developer based in Lowell, Massachussetts,
@@ -90,8 +90,8 @@ const About = () => {
           </div>
 
           <div
-            className="col-lg-5 col-md-12 col-12"
-            style={{ paddingTop: '15%' }}
+            className="col-lg-5 col-md-5 col-sm-5 col-12"
+            style={{ paddingTop: "7%" }}
           >
             <div className="about-image svg">
               <img src={aboutImg} className="img-fluid" alt="about-pic" />
