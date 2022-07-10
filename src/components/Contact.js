@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/custom.css';
 import emailjs from 'emailjs-com';
+import axios from 'axios';
 import '../styles/custom.css';
 
 const location =
   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.647445330423!2d-71.3096620843126!3d42.64763347916865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a439003222e9%3A0x7b606332a3f66544!2s141%20John%20St%2C%20Lowell%2C%20MA%2001852!5e0!3m2!1sen!2sus!4v1657333668318!5m2!1sen!2sus';
+
 const instagram = 'https://www.instagram.com/mofez1978';
 const youtube = 'http://youtube.com/movewebdesign';
 const facebook = 'https://www.facebook.com/profile.php?id=100025229736186';
@@ -36,7 +38,7 @@ const Contact = () => {
         'service_wlsr15g',
         'template_jvqiu3z',
         templateParams,
-        'OttUrdHzbARGwXV4y'
+        '6LdgyaoZAAAAAMIETeWfeTIZi_SQH2a4r1E9Myu8'
       )
       .then(
         (result) => {
@@ -68,6 +70,12 @@ const Contact = () => {
     setName('');
     setEmail('');
     setMessage('');
+  };
+
+  const reCaptcha = async () => {
+    await axios.post(
+      'https://www.google.com/recaptcha/api/siteverify METHOD: POST'
+    );
   };
 
   return (
@@ -138,6 +146,15 @@ const Contact = () => {
                   </div>
 
                   <div className="container">
+                    <div className="row">
+                      <div
+                        className="g-recaptcha"
+                        data-sitekey="6LfBy9ogAAAAAEiOBui0A45wibxClcXXeQTj-M9d"
+                      >
+                        {reCaptcha}
+                      </div>
+                      <br />
+                    </div>
                     <div className="row">
                       <div className="col-lg-6">
                         <input
