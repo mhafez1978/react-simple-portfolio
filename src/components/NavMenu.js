@@ -74,7 +74,7 @@ const NavMenu = () => {
       style={{ backgroundColor: 'aliceblue', height: '45px' }}
     >
       <div className="container">
-        <a id="logo" className="navbar-brand" href="index.html">
+        <a id="logo" className="navbar-brand" href="/">
           <i className="uil uil-user"></i> Mohamed Hafez
         </a>
 
