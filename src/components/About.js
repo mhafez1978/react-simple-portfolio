@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
-import aboutImg from '../components/images/final.png';
+import aboutImg from '../components/images/framed-self.png';
 import '../styles/custom.css';
 
 const resume =
