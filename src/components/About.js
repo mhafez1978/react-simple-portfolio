@@ -20,7 +20,8 @@ const About = () => {
                 <div className="mr-2">
                   <h1 id="opening">
                     {/* Robust Data Driven Business Web &amp; Mobile Applications. */}
-                    Building Robust, Responsive, and Engaging Web Apps.
+                    Let's Build A Website that Will Help Your Business Work
+                    Smarter Not Harder.
                   </h1>
                   <h3 id="opening2" style={{ marginBottom: '25px' }}>
                     A little bit more info about myself, ...

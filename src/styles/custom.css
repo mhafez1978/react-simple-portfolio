@@ -21,7 +21,7 @@ a.navbar-brand {
 }
 
 .purple-btn {
-  width: 300px;
+  width: 100%;
   padding: 10px 15px 10px 15px;
   border: 1px solid #2f2f2f;
   border-radius: 5px;
@@ -30,16 +30,13 @@ a.navbar-brand {
   font-size: 14px !important;
 }
 .purple-btn:hover {
-  width: 300px;
-  padding: 10px 15px 10px 15px;
-  border: 1px solid #2f2f2f;
   border-radius: 15px;
   background-color: #fff;
   color: purple !important;
 }
 
 .grey-btn {
-  width: 200px;
+  width: 100%;
   padding: 10px 15px 10px 15px;
   border: 1px solid #2f2f2f;
   border-radius: 5px;
@@ -48,24 +45,9 @@ a.navbar-brand {
   font-size: 14px !important;
 }
 .grey-btn:hover {
-  width: 300px;
-  padding: 10px 15px 10px 15px;
-  border: 1px solid #2f2f2f;
   border-radius: 15px;
   background-color: purple;
   color: aliceblue !important;
-}
-
-.sepia img {
-  -webkit-filter: sepia(100%);
-  filter: sepia(100%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.sepia:hover img {
-  -webkit-filter: sepia(0);
-  filter: sepia(0);
 }
 
 .frame {
@@ -81,7 +63,6 @@ a.navbar-brand {
 .frame .details {
   width: 100%;
   height: 100%;
-  /* padding: 5% 8%; */
   position: absolute;
   content: '';
   top: 50%;
@@ -114,14 +95,6 @@ h3 span {
   font-size: 1.4rem;
 }
 
-#about {
-  height: 100vh;
-  margin-top: -80px;
-}
-
-#opening {
-  color: purple;
-}
 .typedspan {
   width: 450px;
   border: none;
@@ -141,6 +114,18 @@ h3 span {
 
 ::placeholder {
   color: purple;
+}
+
+#about {
+  height: 100vh;
+  margin-top: -80px;
+}
+
+#opening {
+  color: purple;
+  width: 90%;
+  font-size: 36px;
+  text-align: left;
 }
 
 #emailStatusMessage {
